@@ -1,0 +1,73 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block style %}
+<style>
+    .skills-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        margin-top: 35px;
+    }
+
+    .skills-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .skill {
+        margin-bottom: 10px;
+    }
+
+    .skill-title {
+        font-weight: bold;
+    }
+
+    .skill-description {
+        margin-top: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block conteudo %}
+<nav class="sidebar">
+    <img src="{% static 'media/foto.jpg' %}" alt="Minha Foto" class="profile-image">
+    <ul>
+        <li><a href="/">Sobre mim</a></li>
+        <li class="active"><a href="edu">Educação</a></li>
+        <li><a href="xp">Experiência</a></li>
+        <li><a href="interesses">Interresses</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="projetos">Projetos</a></li>
+    </ul>
+</nav>
+<div>
+    <p>
+        NAda.
+    </p>
+</div>
+
+<div class="skills-container">
+    <h2 class="skills-title">Formação Acadêmica</h2>
+    <div class="skill">
+        <h3 class="skill-title">Ensino Médio Completo </h3>
+        <p class="skill-description">Duração: 2016-2018<br>
+
+            Situação: Concluído.<br>
+
+        </p>
+        <br>
+        <h3 class="skill-title">Ciências da Computação - Universidade Federal de Catalão (UFCAT)</h3>
+        <p class="skill-description">Carga Horária: 3224 hrs<br>
+            Titulação: Bacharel<br>
+            Situação: Em andamento.<br> Previsão de conclusão: 1º semestre 2025
+
+        </p>
+    </div>
+
+    <!-- Adicione mais divs com a classe "skill" para listar suas outras habilidades -->
+</div>
+{% endblock %}

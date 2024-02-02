@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block style %}
+<style>
+    .contentxp {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        color: #20200;
+        z-index: -1;
+        text-align: center;
+    }
+
+    .contentxp .herror {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .contentxp p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+</style>
+{% endblock %}
+
+
+{% block conteudo %}
+<nav class="sidebar">
+    <img src="{% static 'media/foto.jpg' %}" alt="Minha Foto" class="profile-image">
+    <ul>
+        <li><a href="/">Sobre mim</a></li>
+        <li><a href="edu">Educação</a></li>
+        <li class="active"><a href="xp">Experiência</a></li>
+        <li><a href="interesses">Interresses</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="projetos">Projetos</a></li>
+    </ul>
+</nav>
+<div class="contentxp">
+    <div class="herror">ERROR! 404 not found! </div>
+    <p>É isso mesmo. Não tenho nenhuma experiência profissional na área ainda.
+        Apenas as vastas horas estudando e praticando algoritmos. Busco uma oportunidade para
+        oferecer o meu melhor. Mais especificamente, para trabalhar com aplicações desktop.
+        Venho estudando bastante, no intuito de alcançar o autodidatismo.
+    </p>
+</div>
+
+{% endblock %}
